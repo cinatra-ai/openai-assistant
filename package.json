@@ -1,0 +1,26 @@
+{
+  "name": "@cinatra-ai/openai-assistant",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "description": "OpenAI provider-chat assistant for Cinatra — a general-purpose conversational assistant backed by OpenAI models, with credentials resolved through the OpenAI connector.",
+  "type": "module",
+  "files": [
+    "cinatra"
+  ],
+  "cinatra": {
+    "apiVersion": "cinatra.ai/v1",
+    "kind": "agent",
+    "dependencies": [
+      {
+        "packageName": "@cinatra-ai/openai-connector",
+        "edgeType": "runtime",
+        "versionConstraint": {
+          "kind": "semver-range",
+          "range": "^0.1.8"
+        },
+        "requirement": "required",
+        "kind": "connector"
+      }
+    ]
+  }
+}
